@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="NineHertz_ContectUS::userdata" title="NineHertz Data" module="NineHertz_ContectUS" sortOrder="10" resource="NineHertz_ContectUS::userdata"/>
+        <add id="NineHertz_ContectUS::post" title="User Data" module="NineHertz_ContectUS" sortOrder="10" action="userdata/index/post" resource="NineHertz_ContectUS::post" parent="NineHertz_ContectUS::userdata"/>
+    </menu>
+</config>

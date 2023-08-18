@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="ninehertz_contectus_ninehertzdata" resource="default" engine="innodb" comment="ninehertz_contectus_ninehertzdata Table">
+		<column xsi:type="int" name="ninehertzdata_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity Id"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="ninehertzdata_id"/>
+		</constraint>
+		<column name="f_name" nullable="true" xsi:type="varchar" comment="f_name" length="255"/>
+		<column name="l_name" nullable="true" xsi:type="varchar" comment="l_name" length="255"/>
+		<column name="email" nullable="true" xsi:type="varchar" comment="email" length="255"/>
+		<column name="number" nullable="true" xsi:type="int" comment="number" identity="false"/>
+		<column name="dob" nullable="true" xsi:type="date" comment="dob" identity="false"/>
+		<column name="company" nullable="true" xsi:type="text" comment="company"/>
+	</table>
+</schema>
